@@ -1,3 +1,5 @@
+/* src/index.css */
+
 html,
 body,
 #root {
@@ -25,6 +27,7 @@ body,
   display: flex;
   gap: 8px;
   pointer-events: auto;
+  margin-top: 8px;
 }
 .card {
   background: rgba(255, 255, 255, 0.04);
@@ -32,7 +35,6 @@ body,
   border-radius: 10px;
   font-size: 13px;
 }
-
 .panel {
   min-width: 220px;
   background: rgba(10, 12, 18, 0.8);
@@ -55,4 +57,16 @@ body,
   margin: 0;
   font-size: 12px;
   opacity: 0.9;
+}
+
+/* small responsive tweak for mobile */
+@media (max-width: 640px) {
+  .ui {
+    top: 12px;
+    left: 12px;
+  }
+  .cards {
+    flex-direction: column;
+    gap: 6px;
+  }
 }

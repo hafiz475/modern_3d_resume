@@ -1,6 +1,7 @@
-// -----------------------------
-// File: src/main.jsx
-// -----------------------------
+// src/main.jsx
+import * as THREE from "three";
+THREE.Cache.enabled = true; // <- important: prevents repeated network loads
+
 import React from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App";
