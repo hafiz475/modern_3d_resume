@@ -1,6 +1,6 @@
 import React, { useRef, useMemo } from "react";
 import { useFrame } from "@react-three/fiber";
-import { useGLTFModel } from "../utils/loaders";
+import { useGLTFModel } from "../archive/utils/loaders";
 
 function rand(a, b) { return a + Math.random() * (b - a); }
 

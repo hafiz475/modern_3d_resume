@@ -1,13 +1,10 @@
-// -----------------------------
-// File: src/App.jsx
-// -----------------------------
 import React from "react";
-import Experience from "./canvas/Experience";
+import Scene2D from "./canvas/Scene2D";
 
 export default function App() {
   return (
     <div style={{ height: "100vh", width: "100vw", overflow: "hidden" }}>
-      <Experience />
+      <Scene2D />
     </div>
   );
 }
